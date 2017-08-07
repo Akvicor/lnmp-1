@@ -1,4 +1,3 @@
-[![PayPal donate button](https://img.shields.io/badge/paypal-donate-green.svg)](https://paypal.me/yeho)[![支付宝捐助按钮](https://img.shields.io/badge/%E6%94%AF%E4%BB%98%E5%AE%9D-%E5%90%91TA%E6%8D%90%E5%8A%A9-green.svg)](https://static.oneinstack.com/images/alipay.png)[![微信捐助按钮](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%90%91TA%E6%8D%90%E5%8A%A9-green.svg)](https://static.oneinstack.com/images/weixin.png)
 
 This script is written using the shell, in order to quickly deploy `LEMP`/`LAMP`/`LNMP`/`LNMPA`(Linux, Nginx/Tengine/OpenResty, MySQL in a production environment/MariaDB/Percona, PHP), applicable to CentOS 5~7(including redhat), Debian 6~8, Ubuntu 12~16 of 32 and 64. 
 
@@ -24,8 +23,8 @@ Script properties:
 If your server system: CentOS/Redhat (Do not enter "//" and "// subsequent sentence)
 ```bash
 yum -y install wget screen python   // For CentOS / Redhat
-wget http://mirrors.linuxeye.com/lnmp-full.tar.gz   // Contains the source code
-tar xzf lnmp-full.tar.gz
+wget https://github.com/Akvicor/lnmp/raw/master/lnmp.tar.gz   // Contains the source code
+tar xzf lnmp.tar.gz
 cd lnmp    // If you need to modify the directory (installation, data storage, Nginx logs), modify options.conf file
 screen -S lnmp    // if network interruption, you can execute the command `screen -r lnmp` reconnect install window
 ./install.sh   // Do not sh install.sh or bash install.sh such execution
@@ -33,8 +32,8 @@ screen -S lnmp    // if network interruption, you can execute the command `scree
 If your server system: Debian/Ubuntu (Do not enter "//" and "// subsequent sentence)
 ```bash
 apt-get -y install wget screen python   // For Debian / Ubuntu
-wget http://mirrors.linuxeye.com/lnmp-full.tar.gz   // Contains the source code
-tar xzf lnmp-full.tar.gz
+wget https://github.com/Akvicor/lnmp/raw/master/lnmp.tar.gz   // Contains the source code
+tar xzf lnmp.tar.gz
 cd lnmp    // If you need to modify the directory (installation, data storage, Nginx logs), modify options.conf file
 screen -S lnmp    // if network interruption, you can execute the command `screen -r lnmp` reconnect install window
 ./install.sh   // Do not sh install.sh or bash install.sh such execution
